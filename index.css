@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+ } 
+ html, body { 
+    margin: 0; 
+    padding: 0; 
+} 
+body { 
+    background-color: #000; 
+} 
+#land { 
+    background: linear-gradient(90deg, #8a2be2, #00bfff); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-size: 3rem ; 
+    font-weight: bold; 
+    font-family: cursive; 
+} 
+/* Container grid */ 
+.pinterest { 
+    
+   column-count: 2; /* 2 columns on desktop */ 
+    column-gap: 1rem; 
+    padding: 1rem; 
+} 
+.pin {
+    width: auto; /* fills column width */ 
+    margin-bottom: 1rem; /* vertical spacing between pins in same column */ 
+    break-inside: avoid; /* ← important: prevents a pin from being split across columns */ 
+    background: #eee; 
+    border-radius: 12px; 
+    box-sizing: border-box; 
+    border: 1px solid #fff; 
+    overflow: visible; 
+} 
+/* Different heights — just set different heights or let images/content decide */ 
+.pin.small { 
+    height: 20vh; 
+} 
+.pin.medium { 
+    height: 30vh; 
+} 
+.pin.large { 
+    height: 40vh; 
+} 
+/* Responsive: 1 column on mobile */ 
+@media (max-width: 768px) { 
+    .html { 
+        column-count: 2; 
+    } 
+} 
+
+
+
+
+.pin { 
+    background-size: cover; 
+    background-position: center; 
+    object-fit: cover; 
+    background-repeat: no-repeat; 
+    padding: 0; 
+    overflow: visible; 
+} 
+.pin.small { 
+    /* vertical center */ 
+    position: relative;
+    overflow: visible; 
+    background-size: cover; 
+    background-position: center; 
+    object-fit: cover; 
+    background-repeat: no-repeat; 
+    padding: 0; 
+} 
+.pin.medium { 
+    /* vertical center */ 
+    overflow: visible; 
+    background-size: cover; 
+    background-position: center; 
+    object-fit: cover; /* medium pin styles */ 
+    background-repeat: no-repeat; 
+    padding: 0; 
+} 
+.pin.large { 
+    overflow: visible; /* vertical center */ 
+    background-repeat: no-repeat; /* large pin styles */ 
+    background-size: cover; 
+    background-position: center; 
+    object-fit: cover; 
+    padding: 0; 
+} 
+#pin1 { 
+    background-image: url('/images/1769335761108.jpg'); 
+} 
+#pin2 { 
+    background-image: url('/images/1769335984381.jpg'); 
+} 
+#pin3 { 
+    background-image: url('/images/1769336092245.jpg'); 
+} 
+#pin4 { 
+    background-image: url('/images/1769336181752.jpg'); 
+} 
+#pin5 { 
+    background-image: url('/images/1769336379887.jpg'); 
+} 
+#pin6 { 
+    background-image: url('/images/1769336476447.jpg'); 
+} 
+#pin7 { 
+    background-image: url('/images/1769336550549.jpg'); 
+} 
+#pin8 { 
+    background-image: url('/images/1769336610296.jpg'); 
+} 
+#pin9 { 
+    background-image: url('/images/1769336745995.jpg'); 
+} 
+#pin10 { 
+    background-image: url('/images/1769336991711.jpg'); 
+} 
+#pin11 { 
+    background-image: url('/images/1769337038618.jpg'); 
+} 
+#pin12 { 
+    background-image: url('/images/1769337076354.jpg'); 
+} 
+#pin13 { 
+    background-image: url('/images/1769337387467.jpg'); 
+} 
+#pin14 { 
+    background-image: url('/images/1769337475858.jpg'); 
+} 
+#pin15 { 
+    background-image: url('/images/1769337607265.jpg'); 
+} 
+#pin16 { 
+    background-image: url('/images/1769337878085.jpg'); 
+} 
+#pin17 { 
+    background-image: url('/images/1769337928638.jpg'); 
+} 
+#pin18 { 
+    background-image: url('/images/1769338051463.jpg'); 
+} 
+#pin19 { 
+    background-image: url('/images/1769338112630.jpg'); 
+} 
+#pin20 { 
+    background-image: url('/images/1769338228157.jpg'); 
+} 
+#pin21 { 
+    background-image: url('/images/1769338338770.jpg'); 
+} 
+#pin22 { 
+    background-image: url('/images/39767a22a5d96943d80a6e4e4196061d.jpg'); 
+} 
+#pin23 { 
+    background-image: url('/images/6991cb5fed37bdd35a11b087fa03fc57.jpg'); 
+} 
+#pin24 { 
+    background-image: url('/images/8edbe741bee01846c860124212965f3b.jpg'); 
+} 
+#pin25 { 
+    background-image: url('/images/c2ded603df64cde13d01b09ba9046752.jpg'); 
+} 
+#pin26 { 
+    background-image: url('/images/d3f92c3da114c00dd2328cbd9a002e00.jpg'); 
+} 
+#pin27 { 
+    background-image: url('/images/f59bbe6da31bf451f68236aa9d0a73e1.jpg'); 
+}
+
+#welc {
+    color: blue;
+    font-family: cursive;
+    font-size: 2rem;
+}
+
+
+.pin-wrapper {
+  position: relative;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  font-size: 14px;
+}
+.img {
+    height: 40vh;
+    width: vw;
+    margin-left: 5vw;
+    background-image: url('/d27a20b6142d63ca0af8a3dba2eee8a2.jpg');
+    display: flex;
+    overflow: visible; 
+    background-size: cover; 
+    background-position: center; 
+    object-fit: cover; 
+    background-repeat: no-repeat; 
+    padding: 0; 
+    border-right: 2px solid purple;
+    border-left: 2px solid purple ;
+    border-radius: 10px;
+    
+}
+/* Custom Gradient Alert */
+.alert {
+  background: linear-gradient(90deg, #8a2be2, #00bfff); /* purple to blue gradient */
+  color: white;             /* white text */
+  border: none;             /* remove default border */
+  border-radius: 0.5rem;    /* rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* subtle shadow */
+  padding: 1rem 1.5rem;     /* add some padding */
+  font-weight: 500;          /* slightly bold text */
+}
+
+/* Make the close button white */
+.btn-close {
+  filter: invert(1);  
+  /* turns the "X" icon white */
+}
